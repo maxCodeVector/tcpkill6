@@ -19,7 +19,7 @@ all: install | $(binaries)
 phony += all
 
 install:
-	xargs -a dependencies sudo apt-get install
+	xargs -a dependencies sudo apt-get install -y
 phony += install
 
 clean:
